@@ -8,10 +8,10 @@ import {
   Post,
   UseFilters,
 } from '@nestjs/common';
-import { TasksService } from './tasks.service';
-import { CreateTaskDto } from './dto/create-task.dto';
-import { UpdateTaskDto } from './dto/update-task.dto';
-import { GenericExceptionsFilter } from '../common/generic-exceptions/generic-exceptions.filter';
+import { TasksService } from '../service/tasks.service';
+import { CreateTaskDto } from '../dto/create-task.dto';
+import { UpdateTaskDto } from '../dto/update-task.dto';
+import { GenericExceptionsFilter } from '../../common/generic-exceptions/generic-exceptions.filter';
 import { ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('tasks')

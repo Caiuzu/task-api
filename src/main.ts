@@ -4,7 +4,7 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-
+  console.log('DATABASE_URL:', process.env.DATABASE_URL);
   const config = new DocumentBuilder()
     .setTitle('API de Tarefas')
     .setDescription('A descrição da API de Tarefas')
